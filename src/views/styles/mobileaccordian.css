@@ -1,0 +1,40 @@
+.mobile-accordion-container {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  .mobile-accordion-section {
+    margin-bottom: 30px;
+  }
+  
+  .mobile-accordion-image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .mobile-accordion-image {
+    max-width: 250px;
+    max-height: 250px;
+    object-fit: contain;
+  }
+  
+  .mobile-accordion-title {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #f0f0f0;
+  }
+  
+  .mobile-accordion-title.active {
+    background-color: #e0e0e0;
+  }
+  
+  .mobile-accordion-content {
+    padding: 15px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }

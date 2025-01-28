@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Accolades from "./views/components/Accolades";
+import Banner from "./views/components/Banner";
+import { Carousel } from "./views/components/Carousel";
+import FooterComponent from "./views/components/FooterComponent";
+import Header from "./views/components/Header";
+import LogoSlider from "./views/components/Infiniteloop";
+import KioskModeSection from "./views/components/KioskModeSection";
+import KioskTabs from "./views/components/KioskTabs";
+import PlatformsSection from "./views/components/PlatformsSection";
+import SignUpSection from "./views/components/SignUpSection";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Banner />
+      <Accolades/>
+      <KioskTabs />
+      <KioskModeSection/>
+      <Carousel/>
+      <LogoSlider/>
+      <PlatformsSection/>
+      <SignUpSection/>
+      <FooterComponent/>
+    </>
   );
 }
 

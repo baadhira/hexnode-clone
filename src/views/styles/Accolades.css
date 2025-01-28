@@ -1,0 +1,107 @@
+/* Accolades.css */
+.accolades-container {
+  background-color: #1A1C2B;
+  padding: 30px 0;
+}
+
+.accolades-content {
+  width: 88%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .accolades-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.accolade-item {
+  max-width: 240px;
+  flex: 0 0 100%;
+  padding: 40px 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .accolade-item {
+    flex: 0 0 27%;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 768px) {
+  .accolade-item {
+    max-width: 340px;
+
+  }
+}
+.accolade-item:hover {
+  opacity: 0.9; 
+  transform: scale(1.05); 
+  transition: transform 0.3s ease;
+}
+/* .accolade-item:hover{
+  transform: translateY(2px);
+} */
+.accolade-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .accolade-details {
+    align-items: flex-start;
+  }
+}
+
+.accolade-image {
+  margin-bottom: 15px;
+  max-width: 156px;
+  max-height: 25px;
+}
+
+.accolade-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.accolade-description {
+  font-size: 14px;
+  line-height: 22px;
+  text-align: left; /* Ensures consistent alignment */
+  word-break: normal; /* Default word break */
+  overflow: hidden; /* Ensures no overflow */
+  display: -webkit-box; /* Use for multi-line truncation */
+  /* -webkit-line-clamp: 3;  */
+  -webkit-box-orient: vertical; /* Required for line clamp */
+  white-space: normal; /* Allows wrapping */
+}
+
+@media (min-width: 1024px) { /* For large screens */
+  /* .accolade-description {
+    text-align: justify; 
+  } */
+}
+
+
+.divider {
+  width: 107px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (min-width: 768px) {
+  .divider {
+    width: 1px;
+    height: auto;
+    align-self: stretch;
+  }
+}

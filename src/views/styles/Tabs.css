@@ -1,0 +1,46 @@
+.tabs-container {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .tab {
+    flex: 1;
+    padding: 10px 15px;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+  }
+  
+  .tab.active {
+    background-color: black;
+    color: white;
+  }
+  
+  .tab-content {
+    overflow: hidden;
+    position: relative;
+    height: 100px; /* Adjust as needed */
+  }
+  
+  .content {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .content-item {
+    flex: 1;
+    min-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+  }
+  
